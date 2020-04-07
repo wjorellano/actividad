@@ -9,24 +9,41 @@
 </head>
 <body>
 <script type="text/javascript">
-var nombre, edad;
-  nombre = prompt ('Por favor introduce tu nombre:');
-  if (nombre =="") { alert ('No has introducido ningún nombre');
+ var nombre, edad;
+   nombre = prompt ('Por favor introduce tu nombre:');
+   if (nombre =="") { alert ('No has introducido ningún nombre');
+ }
+     else { alert ('Hola '+nombre + '. Bienvenido a esta página web.');
+   }
+     edad = prompt ('¿Cuál es tu edad?');
+     edad = Number(edad);
+       if (edad >3 && edad < 10) {alert ('Eres un niño.');
+       }
+         else if (edad>=10 && edad <18) {alert ('Eres un jovencito.');
+       }
+       else if (edad >=18 && edad < 90) {alert ('Eres mayor de edad.');
+     }
+     else if (edad >=90) { alert ('Tienes muchos años encima...');
+   }
+     else {alert ('No has introducido un valor válido de edad ( '+edad+')');
 }
-    else { alert ('Hola '+nombre + '. Bienvenido a esta página web.');
+// condicional Switch
+  desc = prompt('ingrese un numero de 1 al 5')
+  switch (desc) {
+    case '1': document.write("la eleccion que eligio fue 1");
+      break;
+      case '2':  document.write("la eleccion que eligio fue 2");
+      break;
+      case '3':  document.write("la eleccion que eligio fue 3");
+      break;
+      case '4':  document.write("la eleccion que eligio fue 4");
+      break;
+      case '5':  document.write("la eleccion que eligio fue 5");
+      break;
+    default: alert('la opcion que ha introducido no es correcta');
+
   }
-    edad = prompt ('¿Cuál es tu edad?');
-    edad = Number(edad);
-      if (edad >3 && edad < 10) {alert ('Eres un niño.');
-    }
-        else if (edad>=10 && edad <18) {alert ('Eres un jovencito.');
-      }
-          else if (edad >=18 && edad < 90) {alert ('Eres mayor de edad.');
-        }
-            else if (edad >=90) { alert ('Tienes muchos años encima...');
-          }
-            else {alert ('No has introducido un valor válido de edad ( '+edad+')');
-          }
+
 </script>
 </body>
 </html>
