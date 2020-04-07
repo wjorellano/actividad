@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Condicinales</title>
+</head>
+<body>
+<script type="text/javascript">
+var nombre, edad;
+  nombre = prompt ('Por favor introduce tu nombre:');
+  if (nombre =="") { alert ('No has introducido ningún nombre');
+}
+    else { alert ('Hola '+nombre + '. Bienvenido a esta página web.');
+  }
+    edad = prompt ('¿Cuál es tu edad?');
+    edad = Number(edad);
+      if (edad >3 && edad < 10) {alert ('Eres un niño.');
+    }
+        else if (edad>=10 && edad <18) {alert ('Eres un jovencito.');
+      }
+          else if (edad >=18 && edad < 90) {alert ('Eres mayor de edad.');
+        }
+            else if (edad >=90) { alert ('Tienes muchos años encima...');
+          }
+            else {alert ('No has introducido un valor válido de edad ( '+edad+')');
+          }
+</script>
+</body>
+</html>
