@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+  <title>Selectores(parte-2)</title>
+</head>
+<body>
+  <div class="ejem1 cl1">
+      <p></p>
+  </div>
+  <div class="ejem1">
+      <span></span>
+  </div>
+  <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+
+<script type="text/javascript">
+  var seleccion
+
+  $(document).ready(function () {
+      select = $('.ejem1');
+      if(select.length)
+          console.log('Existen: ' + select.length);
+      else
+          console.log('no existe el elemento seleccionado');
+          select.not('.cl1').text('Este elemento no tiene cl1')
+        select.has('p').text('Este elemento tiene un <p> en su contenido')
+          $('li').first().html('<strong>soy el elemento 1</strong>');
+          $('li').eq(2).text('soy el elemento numero 3');
+          $('li').eq(3).text('soy el elemento numero 4');
+  });
+</script>
+</body>
+</html>
