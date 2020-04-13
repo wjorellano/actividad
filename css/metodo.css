@@ -1,0 +1,23 @@
+body{
+    background: #37a9b0;
+    color: rgb(24, 189, 30);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#item1{
+    background: #F6F6F6;
+    height: 50px;
+    margin: 5% auto;
+    width: 300px;
+}
+
+#item2{
+    display: block;
+    background: #000;
+    height: 50px;
+    width: 300px;
+    margin: 5% auto;
+}

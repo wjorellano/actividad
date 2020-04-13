@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-  <title>Attr</title>
+  <title>setter y getter</title>
 </head>
 <body>
-  <a href="https://www.youtube.com/playlist?list=PLPl81lqbj-4JaLibWSbTVrYTyHDadppKq">Curso de Angular con firebase.</a>
+  <p id="parrafo"> <strong>Hola Mundo con jQuery</strong> </p>
+  <div id="Hola-mundo"></div>
 <script type="text/javascript">
-$(document).ready(function () {
-   $('a').click(function(e){
-       e.preventDefault();
-       var link = $(this).attr('href');
-       alert("Usted esta saliendo de nuestro sitio");
-       location.href = link;
-   });
-
-});
+  $(document).ready(function () {
+      var clase = $("#Hola-mundo").attr("id");
+      alert(clase);
+      $("#Hola-mundo").attr("class","ejemplo");
+  });
 </script>
 </body>
 </html>

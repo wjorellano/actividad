@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/clase.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+  <title>clases</title>
+</head>
+<body>
+      <div id="test">dar click</div>
+<style>
+  #test{
+    cursor: pointer;
+  }
+  .test{
+      background-color: red;
+
+  }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+      $(document).on("click",function(){
+          $("#test").toggleClass("test");
+          if($("#test").hasClass("test"))
+          {
+              $("#test").text("Hey! soy rojo");
+
+          }else{
+
+              $("#test").text("No soy rojo :(");
+          }
+      });
+  });
+</script>
+</body>
+</html>
